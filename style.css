@@ -291,6 +291,7 @@ footer {
 @media (max-width: 510px)
 {
     header .logo {
+        max-width: 200px;
         filter: none;
     }
 }
