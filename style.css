@@ -94,7 +94,11 @@ End of navbar styles*/
     color: #fff;
 }
 
-.langWrap a.active::after {
+.langWrap a:hover {
+    color: #fff;
+}
+
+.langWrap a.active::after, .langWrap a:hover::after {
 	opacity: 1;
 	transform: translate3d(0, 0, 0);
 }
