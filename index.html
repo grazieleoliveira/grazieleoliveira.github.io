@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graziele Oliveira</title>
+    <link rel="shortcut icon" type="image/jpg" href="images/favicon2.png" style="width: 15;">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -14,6 +15,11 @@
         <div class="circle"></div>
         <header>
             <a href="#"><img src="images/grazi5.png" alt="" class="logo"></a>
+            <div class="langWrap">
+                <a href="#" language="portuguese">PT</a>
+                <a href="#" language="english" class="active">EN</a>
+                <a href="#" language="chinese">中文</a>
+            </div>
             <!-- Navbar to use in the future 
 
             <div class="toggle" onclick="toggleMenu()"></div>
@@ -28,12 +34,12 @@
         </header>
         <div class="content">
             <div class="textbox">
-                <h2>Web Developer</h2>
-                <p>Hello! My name is Graziele Oliveira and I'm a brazilian Computer Engineering student who really likes Web Development :). Right now, I'm studying to increase my set of skills to become a full stack developer.</p>
+                <h2 class="title">Web Developer</h2>
+                <p class="description">Hello! My name is Graziele Oliveira and I'm a brazilian Computer Engineering student who really likes Web Development :). Right now, I'm studying to increase my set of skills to become a Full Stack developer.</p>
             </div>
 
             <div class="imgbox">
-                <p>Technologies:</p>
+                <p class="technologies">Technologies:</p>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide"><img src="images/python2.png" alt=""></div>
@@ -48,42 +54,15 @@
         </div>
         <ul class="sci">
             <li><a target="_blank" href="https://github.com/grazieleoliveira"><img src="images/github.png" alt="github"></a></li>
+            <li><a id="linkedin" target="_blank" href="https://www.linkedin.com/in/grazi-oliveira-38265a210/"><img src="images/linkedinn.png" alt="linkedin"></a></li>
         </ul>
     </section>
     <footer>
         <p>©️ <script> document.write(new Date().getFullYear()) </script> Developed by Grazi</p>
     </footer>
+    <script src="scripts/translations.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper('.swiper-container', {
-          spaceBetween: 30,
-          centeredSlides: true,
-          autoplay: {
-              delay: 1750,
-              disableOnInteraction: false,
-          },
-          effect: 'coverflow',
-          grabCursor: true,
-          slidesPerView: 'auto',
-          coverflowEffect: {
-            rotate: 0,
-            stretch: 0,
-            depth: 150,
-            modifier: 2,
-            slideShadows: true,
-          },
-
-          loop: true,
-          
-        });
-
-
-        function toggleMenu(){
-            const menuToggle = document.querySelector('.toggle');
-            const navigation = document.querySelector('.navigation')
-            menuToggle.classList.toggle('active')
-            navigation.classList.toggle('active')
-        }
-      </script>
+    <script src="scripts/interactions.js">
+</script>
 </body>
 </html>
