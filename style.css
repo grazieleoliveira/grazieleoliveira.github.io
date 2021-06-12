@@ -12,7 +12,7 @@ section {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px 100px 100px 100px;
+    padding: 100px 100px 10px 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -168,6 +168,10 @@ End of navbar styles*/
     transition: 0.2s ease-in-out;
 }
 
+.sci li #github{
+    margin-left: 0px;
+}
+
 .sci li a:hover {
     background: #e55d1e;
     transform: translateY(-10px)
@@ -242,7 +246,7 @@ footer {
         margin-right: 15px;
     }
     section {
-        padding: 150px 40px 115px 40px;
+        padding: 150px 40px 130px 40px;
     }
 
     section .circle {
@@ -254,7 +258,7 @@ footer {
     }
     
     .sci li a {
-        margin-left: 0px;
+        margin-left: 15px;
     }
 
     .content {
