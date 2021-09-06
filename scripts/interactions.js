@@ -13,7 +13,7 @@ var swiper = new Swiper('.swiper-container', {
       stretch: 0,
       depth: 150,
       modifier: 2,
-      slideShadows: true,
+      slideShadows: false,
     },
 
     loop: true,
